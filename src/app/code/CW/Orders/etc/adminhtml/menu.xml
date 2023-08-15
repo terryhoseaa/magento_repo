@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="CW_Orders::helloworld" title="Hello World" module="CW_Orders" sortOrder="51" resource="CW_Orders::helloworld"/>
+        <add id="CW_Orders::post" title="Manage Posts" module="CW_Orders" sortOrder="10" action="CW_Orders/post" resource="CW_Orders::post" parent="CW_Orders::helloworld"/>
+        <add id="CW_Orders::hello_configuration" title="Configuration" module="CW_Orders" sortOrder="99" parent="CW_Orders::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="CW_Orders::helloworld_configuration"/>
+    </menu>
+</config>

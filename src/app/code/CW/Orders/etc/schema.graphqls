@@ -1,0 +1,10 @@
+type Query {
+    getRecords : [getAllRecords] @resolver( class: "CW\\Orders\\Model\\Resolver\\OrdersRecords") @doc(description: "Get All  Records")
+}
+
+type getAllRecords {
+    post_id : Int  @doc(description: "Primary Id"),
+    name : String  @doc(description: "Custom Field 1"),
+    post_content : String  @doc(description: "Custom Field 1"),
+    status : Int  @doc(description: "Status"),
+}
